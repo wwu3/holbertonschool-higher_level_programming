@@ -3,6 +3,6 @@ def islower(c):
     if c.islower():
         return True
     elif c == '':
-        return False
+        return True
     else:
         return False
