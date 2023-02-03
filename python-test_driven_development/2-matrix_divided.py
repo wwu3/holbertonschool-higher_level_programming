@@ -24,6 +24,11 @@ def matrix_divided(matrix, div):
             if type(s) not in [int, float]:
                 raise TypeError("matrix must " +
                                 "be a matrix (list of lists) of integers/floats")
-            new_row.append(s / div)
+            result = s/div
+            if (result % 1 == 0):
+                new_row.append(int(result))   
+            else:
+                new_row.append(round(result, 2))
+
         new_matrix.append(new_row)
     return new_matrix
