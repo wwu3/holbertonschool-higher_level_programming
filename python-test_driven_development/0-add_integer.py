@@ -20,3 +20,10 @@ def add_integer(a, b=98):
         raise TypeError("b must be an integer")
 
     return int(a+b)
+
+# doctest_tracebacks.py
+
+
+def this_raises():
+    """This function always raises an exception."""
+    raise TypeError("a must be an integer")
