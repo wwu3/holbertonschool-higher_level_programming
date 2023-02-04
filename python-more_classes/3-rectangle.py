@@ -51,5 +51,6 @@ class Rectangle:
         st = "#"
         st = st * self.width + "\n"
         st = self.height * st
-        if self.height != 0:
-            return st[:-1]
+        if self.height == 0:
+            return 0
+        return st[:-1]
