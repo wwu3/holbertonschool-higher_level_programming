@@ -10,11 +10,11 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self.height = height
         self.width = width
-    
+
     @property
     def height(self):
         return self.__height
-    
+
     @property
     def width(self):
         return self.__width
