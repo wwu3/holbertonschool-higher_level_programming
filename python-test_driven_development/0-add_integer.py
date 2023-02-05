@@ -29,10 +29,12 @@ def this_raises():
 
     >>> this_raises()
     Traceback (most recent call last):
+        ...
     TypeError: a must be an integer
 
     >>> this_raises()
     Traceback (most recent call last):
+        ...
     TypeError: b must be an integer
     """
     raise RuntimeError('here is the error')
