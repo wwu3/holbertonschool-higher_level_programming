@@ -9,5 +9,3 @@
 2
 >>> add_integer(100.3, -2)
 98
->>> add_integer(4, "School")
-4 + "School"
