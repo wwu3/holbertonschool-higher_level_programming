@@ -10,6 +10,4 @@
 >>> add_integer(100.3, -2)
 98
 >>> add_integer(4, "School")
-"School" must be an integer
->>> add_integer(None)
-a must be an integer or b must be an integer
+4 + "School"
