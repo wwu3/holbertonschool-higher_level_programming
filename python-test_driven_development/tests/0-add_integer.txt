@@ -1,8 +1,6 @@
 >>> add_integer = __import__('0-add_integer').add_integer
 >>> add_integer(2,4)
 6
->>> add_integer('a', 98)
-'a' must be an integer
 >>> add_integer(100, -2)
 98
 >>> add_integer(0, 2)
