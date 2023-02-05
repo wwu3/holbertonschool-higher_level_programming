@@ -38,3 +38,7 @@ def this_raises():
     TypeError: b must be an integer
     """
     raise RuntimeError('here is the error')
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("0-add_integer.txt")
