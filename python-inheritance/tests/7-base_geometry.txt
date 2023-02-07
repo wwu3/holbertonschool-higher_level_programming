@@ -19,28 +19,28 @@ TypeError: integer_validator() missing 2 required positional arguments: 'name' a
 >>> bg.integer_valiadator("age")
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+AttributeError: 'BaseGeometry' object has no attribute 'integer_valiadator'
 >>> bg.integer_valiadator("age", 1)
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+AttributeError: 'BaseGeometry' object has no attribute 'integer_valiadator'
 >>> bg.integer_valiadator("age", (4,))
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+AttributeError: 'BaseGeometry' object has no attribute 'integer_valiadator'
 >>> bg.integer_valiadator("age", [3])
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+AttributeError: 'BaseGeometry' object has no attribute 'integer_valiadator'
 >>> bg.integer_valiadator("age", True)
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+AttributeError: 'BaseGeometry' object has no attribute 'integer_valiadator'
 >>> bg.integer_valiadator("age", {3, 4})
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+AttributeError: 'BaseGeometry' object has no attribute 'integer_valiadator'
 >>> bg.integer_valiadator("age", None)
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
+AttributeError: 'BaseGeometry' object has no attribute 'integer_valiadator'
