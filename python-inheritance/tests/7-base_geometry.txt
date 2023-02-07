@@ -12,3 +12,35 @@ ValueError: age must be greater than 0
 Traceback (most recent call last):
 ...
 ValueError: distance must be greater than 0
+>>> bg.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+>>> bi.integer_valiadator("age")
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+>>> bi.integer_valiadator("age", 1)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+>>> bi.integer_valiadator("age", (4,))
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+>>> bi.integer_valiadator("age", [3])
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+>>> bi.integer_valiadator("age", True)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+>>> bi.integer_valiadator("age", {3, 4})
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
+>>> bi.integer_valiadator("age", None)
+Traceback (most recent call last):
+...
+TypeError: name must be an integer
