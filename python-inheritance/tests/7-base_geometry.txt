@@ -15,32 +15,32 @@ ValueError: distance must be greater than 0
 >>> bg.integer_validator()
 Traceback (most recent call last):
 ...
-TypeError: name must be an integer
->>> bi.integer_valiadator("age")
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+>>> bg.integer_valiadator("age")
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
->>> bi.integer_valiadator("age", 1)
+>>> bg.integer_valiadator("age", 1)
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
->>> bi.integer_valiadator("age", (4,))
+>>> bg.integer_valiadator("age", (4,))
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
->>> bi.integer_valiadator("age", [3])
+>>> bg.integer_valiadator("age", [3])
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
->>> bi.integer_valiadator("age", True)
+>>> bg.integer_valiadator("age", True)
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
->>> bi.integer_valiadator("age", {3, 4})
+>>> bg.integer_valiadator("age", {3, 4})
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
->>> bi.integer_valiadator("age", None)
+>>> bg.integer_valiadator("age", None)
 Traceback (most recent call last):
 ...
 TypeError: name must be an integer
