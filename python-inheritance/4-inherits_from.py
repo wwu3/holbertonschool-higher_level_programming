@@ -6,6 +6,4 @@ def inherits_from(obj, a_class):
     """
     Defines a functiion called inherits_from
     """
-    if issubclass(type(obj), type(obj)):
-        return True
-    return False
+    return issubclass(type(obj), a_class)
