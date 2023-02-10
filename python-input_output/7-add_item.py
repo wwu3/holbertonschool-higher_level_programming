@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Load, add, save"""
+"""
+Load, add, save
+"""
 import json
 import sys
 
