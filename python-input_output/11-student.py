@@ -20,3 +20,7 @@ class Student:
         self.age = json['age']
         if 'first_name' in json:
             self.first_name = json['first_name']
+        if 'last_name' in json:
+            self.last_name = json['last_name']
+        if 'age' in json:
+            self.age = json['age']
