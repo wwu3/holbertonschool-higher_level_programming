@@ -15,9 +15,6 @@ class Student:
         return dict(filter(lambda i: i[0] in attrs, self.__dict__.items()))
 
     def reload_from_json(self, json):
-        self.first_name = json['first_name']
-        self.last_name = json['last_name']
-        self.age = json['age']
         if 'first_name' in json:
             self.first_name = json['first_name']
         if 'last_name' in json:
