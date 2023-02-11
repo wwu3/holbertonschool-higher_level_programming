@@ -18,5 +18,5 @@ class Student:
         self.first_name = json['first_name']
         self.last_name = json['last_name']
         self.age = json['age']
-        if 'first_name' is {}:
-            return ()
+        if 'first_name' in json:
+            self.first_name = json['first_name']
