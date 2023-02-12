@@ -72,7 +72,7 @@ Example: A comma after the item when only one item, otherwise Python will not re
 
 Python works differently on mutable and immutable objects. Assignment in Python never copies values. It only copies references. 
 
-According to the article <Immutable object> from WIKIPEDIA, “...If an object is known to be immutable, it is preferred to create a reference of it instead of copying the entire object.  This is done to conserve memory by preventing data duplication and avoid calls to constructors and destructors; it also results in a potential boost in execution speed.”
+According to the article from WIKIPEDIA, “...If an object is known to be immutable, it is preferred to create a reference of it instead of copying the entire object.  This is done to conserve memory by preventing data duplication and avoid calls to constructors and destructors; it also results in a potential boost in execution speed.”
 
 There are two ways we can pass data to a function:
         
