@@ -18,11 +18,15 @@ Example:
 <img width="167" alt="Screenshot 2023-02-12 at 7 07 54 pm" src="https://user-images.githubusercontent.com/113806658/218299975-5d590b1e-fc29-4158-a8ca-b5fa612a4265.png">
 
 
-type() is an inbuilt function in Python.
+<!-- TYPE --> 
+## type() is an inbuilt function in Python.
+
 The type() function returns the type of the specified object.  type() function is mostly used for debugging purposes.
-Syntax :  (Two different forms of type() function)
-type(object)
-type(name, bases, dict)
+
+### Syntax: (Two different forms of type() function)
+### type(object)
+### type(name, bases, dict)
+
 Example: single argument 
 
 
