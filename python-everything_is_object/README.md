@@ -78,7 +78,7 @@ Example:
         
 <img width="200" alt="Screenshot 2023-02-12 at 8 30 26 pm" src="https://user-images.githubusercontent.com/113806658/218303135-43608b79-8566-4f1c-9a48-47edd15a0171.png">
 
-***Pass via a variable to a function***:
+***Pass a variable to a function***:
 Example:
         
 <img width="156" alt="Screenshot 2023-02-12 at 8 32 11 pm" src="https://user-images.githubusercontent.com/113806658/218303226-74713057-2c80-4375-bd6e-9f8045657faa.png">
