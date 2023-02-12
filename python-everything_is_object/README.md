@@ -1,4 +1,4 @@
-python-everything_is_object
+
 Python, everything is an Object.  each object has an identity, type, and value,
 Everything means everything, including functions and classes. Data type is a property of the object and not of the variable.
 
