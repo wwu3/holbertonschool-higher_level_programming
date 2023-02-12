@@ -1,9 +1,9 @@
-# Python, everything is an Object.  
+# PYTHON, EVERYTHING IS AN OBJECT.  
 
 Each object has an identity, type, and value,
 Everything means everything, including functions and classes. Data type is a property of the object and not of the variable.
 
-![python-logo](https://user-images.githubusercontent.com/113806658/218299554-4f230a57-2a33-41ad-b64a-88678e6c6aaf.jpg)
+![image](https://user-images.githubusercontent.com/113806658/218303921-475b07f0-3a23-4907-91e3-1c09c5769f36.png)
 
 <!-- ID -->  
 ## id() is an inbuilt function in Python
@@ -41,6 +41,9 @@ If three arguments (name, bases and dict) are passed, it returns a new type obje
         to the __dict__ attribute.
 
 ## Mutable and Immutable objects in Python
+
+![image](https://user-images.githubusercontent.com/113806658/218304016-a910665b-e094-4ead-aa90-af791ef7a119.png)
+
 Every variable holds an instance of an object in Python.There are two types of objects  Mutable and Immutable objects.
 
 A ***mutable object*** can be modified after initial defined.  Mutable ‘s id is the same, value changeable.
