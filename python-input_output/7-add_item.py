@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-"""Import two modules
-"""
-
-
 import json
 import sys
 
