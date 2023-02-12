@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""JSON file"""
+
+
 import json
 import sys
 
