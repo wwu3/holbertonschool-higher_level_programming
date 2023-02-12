@@ -6,7 +6,7 @@ Everything means everything, including functions and classes. Data type is a pro
 ![python-logo](https://user-images.githubusercontent.com/113806658/218299554-4f230a57-2a33-41ad-b64a-88678e6c6aaf.jpg)
 
 <!-- ID -->  
-## id() is an in built function in Python.
+## id() is an inbuilt function in Python.
 
 It prints the memory address for the specified object.  All objects in Python has their own id and this is assigned to the object when it is created.
 
