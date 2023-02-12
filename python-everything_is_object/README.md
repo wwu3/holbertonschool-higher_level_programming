@@ -10,33 +10,36 @@ Everything means everything, including functions and classes. Data type is a pro
 
 It prints the memory address for the specified object.  All objects in Python has their own id and this is assigned to the object when it is created.
 
-### Syntax : id(object)
+#### Syntax : id(object)
 Example:
 
 <img width="179" alt="Screenshot 2023-02-12 at 7 06 44 pm" src="https://user-images.githubusercontent.com/113806658/218299922-61942885-5b28-4d78-b1dc-3beef1a0ab6d.png">
 
 <img width="167" alt="Screenshot 2023-02-12 at 7 07 54 pm" src="https://user-images.githubusercontent.com/113806658/218299975-5d590b1e-fc29-4158-a8ca-b5fa612a4265.png">
 
-
 <!-- TYPE --> 
 ## type() is an inbuilt function in Python.
 
 The type() function returns the type of the specified object.  type() function is mostly used for debugging purposes.
 
-### Syntax: (Two different forms of type() function)
-### type(object)
-### type(name, bases, dict)
+#### Syntax: (Two different forms of type() function)
+#### type(object)
+Example: 
 
-Example: single argument 
+<img width="358" alt="Screenshot 2023-02-12 at 7 58 51 pm" src="https://user-images.githubusercontent.com/113806658/218301924-3a27f6ba-62ac-487e-92c8-5882dca8bf92.png">
 
+#### type(name, bases, dict)
+**Example: type() With name, bases and dict Parameters**
 
-Example: type() With name, bases and dict Parameters
 If three arguments (name, bases and dict) are passed, it returns a new type object.
-Parameters:
-name: name of class, which later corresponds to the __name__ attribute of the class.
-bases : tuple of classes from which the current class derives. Later corresponds 
+
+**Parameters**:
+
+***name***: name of class, which later corresponds to the __name__ attribute of the class.
+
+***bases***: tuple of classes from which the current class derives. Later corresponds 
         to the __bases__ attribute.
-dict :  a dictionary that holds the namespaces for the class. Later corresponds 
+***dict***:  a dictionary that holds the namespaces for the class. Later corresponds 
         to the __dict__ attribute.
 
 
