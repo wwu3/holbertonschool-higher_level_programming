@@ -1,15 +1,16 @@
+# Python, everything is an Object.  
 
-Python, everything is an Object.  each object has an identity, type, and value,
+Each object has an identity, type, and value,
 Everything means everything, including functions and classes. Data type is a property of the object and not of the variable.
 
+![python-logo](https://user-images.githubusercontent.com/113806658/218299554-4f230a57-2a33-41ad-b64a-88678e6c6aaf.jpg)
 
-id() is an inbuilt function in Python.
+<!-- ID -->  
+## id() is an in built function in Python.
+
 It prints the memory address for the specified object.  All objects in Python has their own id and this is assigned to the object when it is created.
-Syntax : id(object)
 
-
-Eg: object is an integer
-
+### Syntax : id(object)
 Eg: object is a string
 
 type() is an inbuilt function in Python.
