@@ -5,7 +5,7 @@
 class Base:
     """
     Attributes:
-        __nb_objects    private class attribute 
+        __nb_objects    private class attribute
     """
     __nb_objects = 0
 
