@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-JSON file
+Open JSON file input/output 
 """
 import json
 import sys
