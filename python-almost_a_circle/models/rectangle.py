@@ -71,3 +71,10 @@ class Rectangle(Base):
         Function area
         """
         return self.width * self.height
+
+    def display(self):
+        """
+        Function display
+        """
+        for i in range(self.height):
+            print("#" * self.width)
