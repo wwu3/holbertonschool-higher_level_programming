@@ -20,4 +20,3 @@ class Base:
     @staticmethod
     def get_nb_objects():
         return Base.__nb_objects
-    
