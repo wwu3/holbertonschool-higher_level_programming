@@ -11,8 +11,13 @@ class Base:
 
     """Initializes the data"""
     def __init__(self, id=None):
-        Base.__nb_objects += 1
         if id is not None:
             self.id = id
         elif id is None:
+            Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def get_nb_objects():
+        return Base.__nb_objects
+    

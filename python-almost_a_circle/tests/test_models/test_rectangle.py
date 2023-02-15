@@ -6,7 +6,8 @@ from models.base import Base
 class TestRectangle(unittest.TestCase):
 
     def test_idf(self):
-        Base.__nb_objects = 0
-        r = Rectangle(1, 2)
-        self.assertEqual(r.id, 1)
+        r = Rectangle(10, 2)
+        self.assertEqual(r.id, Base.get_nb_objects())
 
+if __name__ == "__main__":
+    unittest.main()
