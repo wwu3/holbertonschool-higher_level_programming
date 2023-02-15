@@ -65,3 +65,6 @@ class Rectangle(Base):
     def y(self, value):
         self.validate_positive_or_zero(value, "y")
         self.__y = value
+
+    def area(self):
+        return self.width * self.height
