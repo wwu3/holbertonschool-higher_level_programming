@@ -28,10 +28,10 @@ class Rectangle(Base):
     def y(self):
         return self.__y
 
-    """
-    Function validate_positive pass the parameters value and name
-    """
     def validate_positive(self, value, name):
+        """
+        Function validate_positive pass the parameters value and name
+        """
         if not type(value) is int:
             raise TypeError(f"{name} must be an integer")
         if value <= 0:
