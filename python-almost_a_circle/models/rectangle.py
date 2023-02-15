@@ -37,10 +37,10 @@ class Rectangle(Base):
         if value <= 0:
             raise ValueError(f"{name} must be > 0")
 
-    """
-    Function validate_positive_or_zero pass the parameters value and name
-    """
     def validate_positive_or_zero(self, value, name):
+        """
+        Function validate_positive_or_zero pass the parameters value and name
+        """
         if not type(value) is int:
             raise TypeError(f"{name} must be an integer")
         if value < 0:
