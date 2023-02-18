@@ -90,17 +90,29 @@ class Rectangle(Base):
         str2 = f" - {self.width}/{self.height}"
         return str1 + str2
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Function update
         """
-        if args[0] is not None:
-            self.id = args[0]
-        if len(args) > 1 and args[1] is not None:
-            self.width = args[1]
-        if len(args) > 2 and args[2] is not None:
-            self.height = args[2]
-        if len(args) > 3 and args[3] is not None:
-            self.x = args[3]
-        if len(args) > 4 and args[4] is not None:
-            self.y = args[4]
+        if len(args) > 0:
+            if len(args) > 0 and args[0] is not None:
+                self.id = args[0]
+            if len(args) > 1 and args[1] is not None:
+                self.width = args[1]
+            if len(args) > 2 and args[2] is not None:
+                self.height = args[2]
+            if len(args) > 3 and args[3] is not None:
+                self.x = args[3]
+            if len(args) > 4 and args[4] is not None:
+                self.y = args[4]
+            return
+        if 'id' in kwargs:
+            self.id = kwargs['id']
+        if 'width' in kwargs:
+            self.width = kwargs['width']
+        if 'height' in kwargs:
+            self.height = kwargs['height']
+        if 'x' in kwargs:
+            self.x = kwargs['x']
+        if 'y' in kwargs:
+            self.y = kwargs['y']
