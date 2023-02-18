@@ -38,3 +38,9 @@ class Base:
         with open(f"{cls.__name__}.json", 'w', encoding="utf-8") as f:
             list_dicts = [o.to_dictionary() for o in list_objs]
             f.write(Base.to_json_string(list_dicts))
+
+    @staticmethod
+    def from_json_string(json_string):
+        if json_string is None or []:
+            return "[]"
+        return json_string
