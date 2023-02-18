@@ -9,5 +9,4 @@ class TestBase(unittest.TestCase):
         self.assertEqual(b.id, 1)
 
     def test_json(self):
-        b = Base(6)
-        self.assertEquals(b.to_json_string(), "{id: gfgidf, age: 66, name: Zoe")
+        self.assertEquals(Base.to_json_string([{"id": 3}]), '[{"id": 3}]')
