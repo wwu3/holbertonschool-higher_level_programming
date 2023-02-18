@@ -95,4 +95,7 @@ class Rectangle(Base):
         return str1 + str2
 
     def update(self, *args):
+        """
+        Function update
+        """
         return ("[Rectangle] ({}) {}/{} - {}/{}", args)
