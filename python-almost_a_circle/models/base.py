@@ -50,3 +50,10 @@ class Base:
         i = cls(1, 2)
         i.update(**dictionary)
         return i
+
+    @classmethod
+    def load_from_file(cls):
+        with open(f"{cls.__name__}.json", 'r', encoding="utf-8") as f:
+            json_string = f.read()
+            list_of_dictionaries = Base.from_json_string(json_string)
+        return [cls.create(**i) for i in list_of_dictionaries]
