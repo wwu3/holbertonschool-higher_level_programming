@@ -82,7 +82,7 @@ class Rectangle(Base):
             if self.y == 0 or self.x == 0:
                 print()
             if self.x == self.height:
-                print("#" * slef.y)
+                print(" #" * slef.y)
             print("#" * self.x)
 
     def __str__(self):
