@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Define a class Base"""
+import json
 
 
 class Base:
@@ -20,3 +21,7 @@ class Base:
     @staticmethod
     def get_nb_objects():
         return Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        return json.dumps(list_dictionaries)
