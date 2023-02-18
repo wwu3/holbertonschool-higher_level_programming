@@ -19,3 +19,16 @@ class Square(Rectangle):
     def size(self, value):
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """
+        Function update
+        """
+        nargs = args
+        nkwargs = kwargs
+        if len(args) > 1:
+            nargs = nargs[0:2] + nargs[1:]
+        if 'size' in kwargs:
+            kwargs['width'] = kwargs['size']
+            kwargs['height'] = kwargs['size']
+        super().update(*nargs, **nkwargs)
