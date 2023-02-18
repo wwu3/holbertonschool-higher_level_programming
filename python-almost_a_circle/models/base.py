@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define a class Base"""
 import json
+import os.path
 
 
 class Base:
@@ -53,6 +54,9 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
+        path = f"./{cls.__name__}.json"
+        if not os.path.exists(path):
+            return []
         with open(f"{cls.__name__}.json", 'r', encoding="utf-8") as f:
             json_string = f.read()
             list_of_dictionaries = Base.from_json_string(json_string)
