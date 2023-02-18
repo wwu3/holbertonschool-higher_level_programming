@@ -79,6 +79,8 @@ class Rectangle(Base):
         for i in range(self.height):
             print("#" * self.width)
         for i in range(self.y):
+            if self.y == 0 or self.x == 0:
+                print()
             print("#" * self.x)
 
     def __str__(self):
