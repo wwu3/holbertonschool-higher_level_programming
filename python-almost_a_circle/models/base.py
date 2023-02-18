@@ -41,6 +41,10 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        json_string = {}
         if json_string is None or []:
             return "[]"
         return json_string
+
+    #@classmethod
+    #def create(cls, **dictionary):
