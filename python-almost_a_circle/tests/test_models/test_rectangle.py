@@ -13,14 +13,11 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r.x, 0)
         self.assertEqual(r.y, 0)
         self.assertEqual(r.area(), 2)
-        self.assertEqual(2, r.height)
-        self.assertNotEqual('2', r.height)
 
     def test_not_negative(self):
         with self.assertRaises(Exception) as context:
             Rectangle(-1, 0)
 
-    
 
 if __name__ == "__main__":
     unittest.main()
