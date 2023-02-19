@@ -30,8 +30,23 @@ class TestSquaree(unittest.TestCase):
         with self.assertRaises(Exception) as context:
             Square(4, y=-1)
 
+    def test_width_string(self):
+        with self.assertRaises(Exception) as context:
+            Square("1")
 
-    
+    def test_height_string(self):
+        with self.assertRaises(Exception) as context:
+            Square(4, "2")
+
+    def test_x_string(self):
+        with self.assertRaises(Exception) as context:
+            Square(4, 4, x="3")
+
+    def test_no_string(self):
+        with self.assertRaises(Exception) as context:
+            Square(4, 4, x=3, y=2)
+
+
 
 if __name__ == "__main__":
     unittest.main()
