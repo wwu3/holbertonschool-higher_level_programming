@@ -21,6 +21,10 @@ class TestSquaree(unittest.TestCase):
         self.assertEqual(r.height, 1)
         self.assertEqual(r.x, 2)
         self.assertEqual(r.y, 3)
+
+    def test_str(self):
+        s = Square(1, 2, 3, 4)
+        self.assertEqual(s.__str__(), "[Square] (4) 2/3 - 1")
     
     def test_not_negative(self):
         with self.assertRaises(Exception) as context:
