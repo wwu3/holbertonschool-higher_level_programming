@@ -22,6 +22,20 @@ class TestSquaree(unittest.TestCase):
         self.assertEqual(r.x, 2)
         self.assertEqual(r.y, 3)
 
+    def test_save_and_load_from_file(self):
+        #list of squares
+        list_of_square = []
+
+        #save list to file
+        Square.save_to_file(list_of_square)
+
+        #load file to instances
+        list_of_objects = Square.load_from_file()
+
+        #compare original assertEquals loaded
+        self.assertEqual(list_of_objects, [])
+
+
     def test_str(self):
         s = Square(1, 2, 3, 4)
         self.assertEqual(s.__str__(), "[Square] (4) 2/3 - 1")
