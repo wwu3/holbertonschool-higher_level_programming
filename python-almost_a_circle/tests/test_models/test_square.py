@@ -26,6 +26,9 @@ class TestSquaree(unittest.TestCase):
         with self.assertRaises(Exception) as context:
             Square(3, x=-1)
 
+    def test_y_negative(self):
+        with self.assertRaises(Exception) as context:
+            Square(4, y=-1)
 
 
             
