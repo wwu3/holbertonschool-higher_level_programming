@@ -18,6 +18,29 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(Exception) as context:
             Rectangle(-1, 0)
 
+    def test_width_string(self):
+        with self.assertRaises(Exception) as context:
+            Rectangle("2", 3)
+
+    def test_height_string(self):
+        with self.assertRaises(Exception) as context:
+            Rectangle(2, "3")
+
+    def test_width_negative(self):
+        with self.assertRaises(Exception) as context:
+            Rectangle(-2, 3)
+
+    def test_height_negative(self):
+        with self.assertRaises(Exception) as context:
+            Rectangle(2, -3)
+
+    def test_width_zero(self):
+        with self.assertRaises(Exception) as context:
+            Rectangle(0, 3)
+   
+    def test_height_zero(self):
+        with self.assertRaises(Exception) as context:
+            Rectangle(2, 0)
 
 if __name__ == "__main__":
     unittest.main()
