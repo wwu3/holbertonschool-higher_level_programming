@@ -16,5 +16,11 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(2, r.height)
         self.assertNotEqual('2', r.height)
 
+    def test_not_negative(self):
+        with self.assertRaises(Exception) as context:
+            Rectangle(-1, 0)
+
+    
+
 if __name__ == "__main__":
     unittest.main()

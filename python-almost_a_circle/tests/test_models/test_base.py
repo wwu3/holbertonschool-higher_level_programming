@@ -19,7 +19,7 @@ class TestBase(unittest.TestCase):
 
     def test_save_and_load_from_file(self):
         #list of squares
-        list_of_square = [Square(12), Square(24)]
+        list_of_square = [Square(12), Square(24, 2, 3, 77)]
 
         #save list to file
         Square.save_to_file(list_of_square)
@@ -33,4 +33,9 @@ class TestBase(unittest.TestCase):
         self.assertEquals(list_of_square[0].height, list_of_objects[0].height)
         self.assertEquals(list_of_square[0].x, list_of_objects[0].x)
         self.assertEquals(list_of_square[0].y, list_of_objects[0].y)
+        self.assertEquals(list_of_square[1].id, list_of_objects[1].id)
+        self.assertEquals(list_of_square[1].width, list_of_objects[1].width)
+        self.assertEquals(list_of_square[1].height, list_of_objects[1].height)
+        self.assertEquals(list_of_square[1].x, list_of_objects[1].x)
+        self.assertEquals(list_of_square[1].y, list_of_objects[1].y)
 
