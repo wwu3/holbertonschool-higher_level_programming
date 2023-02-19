@@ -13,6 +13,8 @@ class TestRectangle(unittest.TestCase):
         self.assertEqual(r.x, 0)
         self.assertEqual(r.y, 0)
         self.assertEqual(r.area(), 2)
+        self.assertEqual(2, r.height)
+        self.assertNotEqual('2', r.height)
 
 if __name__ == "__main__":
     unittest.main()
