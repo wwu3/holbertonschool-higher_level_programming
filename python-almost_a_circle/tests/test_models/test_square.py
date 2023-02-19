@@ -31,10 +31,6 @@ class TestSquaree(unittest.TestCase):
             Square(4, y=-1)
 
 
-            
-    
-    
-
     
 
 if __name__ == "__main__":
