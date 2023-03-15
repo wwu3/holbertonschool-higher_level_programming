@@ -1,10 +1,10 @@
 -- ists all the cities of California that can be found in the database
 
-SELECT name
+SELECT states.name, states.id
 FROM cities
 WHERE states.id = (
-    SELECT id
-    FROM states
-    WHERE name = 'California'
+    SELECT states.id
+    FROM cities
+    WHERE states.name = 'California'
 )
 ORDER BY cities.id ASC;
