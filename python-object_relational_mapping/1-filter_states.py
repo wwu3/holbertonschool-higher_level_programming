@@ -13,7 +13,7 @@ if __name__ == "__main__":
                          passwd=mysql_password, db=databasename)
     c = db.cursor()
     query = ("SELECT * FROM states WHERE name LIKE 'N%' "
-            "AND BINARY name LIKE 'N%'")
+             "AND BINARY name LIKE 'N%'")
     c.execute(query)
     rows = c.fetchall()
     for row in rows:
