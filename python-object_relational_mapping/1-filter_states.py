@@ -12,7 +12,9 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host="localhost", port=3306, user=mysql_username,
                          passwd=mysql_password, db=databasename)
     c = db.cursor()
-    c.execute("SELECT * FROM states WHERE name LIKE 'N%' AND name REGEXP '^N'")
+    query = ("SELECT * FROM states WHERE name LIKE 'N%' "
+            "AND BINARY name LIKE 'N%'")
+    c.execute(query)
     rows = c.fetchall()
     for row in rows:
         print(row)
