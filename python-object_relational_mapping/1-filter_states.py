@@ -11,9 +11,9 @@ if __name__ == "__main__":
     databasename = sys.argv[3]
     db = MySQLdb.connect(host="localhost", port=3306, user=mysql_username,
                          passwd=mysql_password, db=databasename)
-    cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' AND name REGEXP '^N'")
-    rows = cur.fetchall()
+    c = db.cursor()
+    c.execute("SELECT * FROM states WHERE name LIKE 'N%' AND name REGEXP '^N'")
+    rows = c.fetchall()
     for row in rows:
         print(row)
-    cur.close()
+    c.close()
