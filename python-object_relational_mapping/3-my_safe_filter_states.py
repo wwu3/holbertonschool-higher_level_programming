@@ -9,7 +9,7 @@ if __name__ == "__main__":
 
     if len(sys.argv) != 5:
         print("Usage: {} mysql_username mysql_password database_name"
-          " state_name_searched".format(sys.argv[0]))
+              " state_name_searched".format(sys.argv[0]))
         exit(1)
 
     mysql_username = sys.argv[1]
@@ -34,5 +34,3 @@ if __name__ == "__main__":
 
     cur.close()
     db.close()
-
-
