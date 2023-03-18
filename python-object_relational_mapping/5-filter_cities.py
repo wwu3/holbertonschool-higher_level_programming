@@ -6,6 +6,11 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
+    
+    if len(sys.argv) != 5:
+        print("Usage: {} <mysql_username> <mysql_password>"
+              "  <database_name>".format(sys.argv[0]))
+        exit(1)
 
     mysql_username = sys.argv[1]
     mysql_password = sys.argv[2]
