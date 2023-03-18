@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+"""
+contains the State class and Base = declarative_base()
+"""
 from sqlalchemy import create_engine
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
