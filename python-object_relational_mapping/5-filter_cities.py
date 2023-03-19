@@ -20,8 +20,6 @@ if __name__ == "__main__":
                     " ORDER BY cities.id ASC")
     cur.execute(cities_query, [state_name])
     rows = cur.fetchall()
-    for row in rows:
-        print(row[0], end=' ')
-    print()
+    print(', '.join(item[0] for item in rows))
     cur.close()
     db.close()
