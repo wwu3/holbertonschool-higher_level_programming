@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-model_state contains the State class and Base = declarative_base()
+model_state contains the State class
+and Base = declarative_base()
 """
 from sqlalchemy import create_engine
 from sqlalchemy import Column, Integer, String
