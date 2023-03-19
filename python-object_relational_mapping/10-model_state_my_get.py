@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     states = session.query(State).filter(State.name == sys.argv[4]).first()
 
-    if State is not None:
+    if states is not None:
         print(states.id)
     else:
         print("Not found")
