@@ -10,6 +10,7 @@ Base = declarative_base()
 
 
 class State(Base):
+
     """State class"""
     __tablename__ = 'states'
 
@@ -17,6 +18,6 @@ class State(Base):
     name = Column(String(128), nullable=False)
 
 
-db_uri = ("mysql+mysqldb://root@localhost:3306/hbtn_0e_6_usa")
-engine = create_engine(db_uri)
-Base.metadata.create_all(engine)
+    db_uri = ("mysql+mysqldb://root@localhost:3306/hbtn_0e_6_usa")
+    engine = create_engine(db_uri)
+    Base.metadata.create_all(engine)
