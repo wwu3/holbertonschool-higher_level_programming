@@ -6,15 +6,8 @@ from sqlalchemy import create_engine
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
-"""
-contains the State class and Base = declarative_base()
-"""
 Base = declarative_base()
 
-
-"""
-contains the State class and Base = declarative_base()
-"""
 class State(Base):
     """State class"""
     __tablename__ = 'states'
