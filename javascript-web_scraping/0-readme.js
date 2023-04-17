@@ -6,7 +6,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
   if (err) {
     console.log(err);
     return;
-  } 
+  }
   fInput = data.toString();
   console.log(fInput);
 });
