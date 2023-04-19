@@ -7,8 +7,11 @@ request(apiUrl, (err, response, body) => {
     return;
   }
   const films = JSON.parse(body).results;
-  const characters = films.map((film) => film.character);
-  console.log(characters);
-  const countId = characters.filter((character) => character.include('/18/'));
+  console.log(films);
+  const charactersInFilms = films.map((film) => film.characters);
+  console.log(charactersInFilms);
+  const countId = charactersInFilms.filter((film) => film.filter(
+    character => character.includes('/18/')
+  ).length > 0).length;
   console.log(countId);
 });
