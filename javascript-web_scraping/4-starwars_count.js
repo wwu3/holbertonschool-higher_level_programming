@@ -7,9 +7,7 @@ request(apiUrl, (err, response, body) => {
     return;
   }
   const films = JSON.parse(body).results;
-  console.log(films);
   const charactersInFilms = films.map((film) => film.characters);
-  console.log(charactersInFilms);
   const countId = charactersInFilms.filter((film) => film.filter(
     character => character.includes('/18/')
   ).length > 0).length;
